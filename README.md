@@ -19,7 +19,7 @@ script(function* () {
   }
 
   if ((yield exec('gzip -k build/js/bundle.js').code) !== 0) {
-    echo('Failed to gzip bundle/js/bundle.js')
+    echo('Failed to gzip build/js/bundle.js')
     exit(1)
   }
 })

@@ -1,6 +1,6 @@
 {
   "name": "shellkit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "write shell scripts in javascript using promises",
   "main": "dist/index.js",
   "author": "Summer Davies <npm@summer.dev>",
