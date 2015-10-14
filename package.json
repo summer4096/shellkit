@@ -1,10 +1,17 @@
 {
   "name": "shellkit",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "write shell scripts in javascript using promises",
   "main": "dist/index.js",
   "author": "Summer Davies <npm@summer.dev>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/summer4096/shellkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/summer4096/shellkit/issues"
+  },
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean; babel --copy-files --source-maps --optional runtime --stage 1 -d dist src",

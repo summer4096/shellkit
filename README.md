@@ -4,7 +4,7 @@ asynchronous unix shell commands for es6 and beyond
 
 ## Example
 
-```console
+```javascript
 import 'shellkit/global'
 
 script(function* () {
