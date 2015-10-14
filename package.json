@@ -1,0 +1,40 @@
+{
+  "name": "shellkit",
+  "version": "0.0.1",
+  "description": "write shell scripts in javascript using promises",
+  "main": "dist/index.js",
+  "author": "Summer Davies <npm@summer.dev>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean; babel --copy-files --source-maps --optional runtime --stage 1 -d dist src",
+    "watch": "npm run clean; babel --copy-files --source-maps --optional runtime --stage 1 -d dist -w src",
+    "prepublish": "npm run test; npm run lint",
+    "lint": "standard src/**/*.js",
+    "test": "tape dist/test/**/*.js"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "babel-runtime": "^5.8.20",
+    "blue-tape": "^0.1.10",
+    "fs-promise": "^0.3.1",
+    "git-validate": "^2.0.3",
+    "glob-promise": "^1.0.3",
+    "standard": "^5.2.2",
+    "tape": "^4.2.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "pre-commit": [
+    "test",
+    "lint"
+  ],
+  "dependencies": {
+    "mkpath": "^0.1.0",
+    "rimraf": "^2.4.3",
+    "shell-escape": "^0.2.0",
+    "tagged-template-escape": "^1.0.3"
+  }
+}
