@@ -1,5 +1,7 @@
 # Shellkit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/summer4096/shellkit.svg)](https://greenkeeper.io/)
+
 asynchronous unix shell commands for es6 and beyond
 
 ## Example
